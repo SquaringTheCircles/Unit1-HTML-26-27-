@@ -8,7 +8,13 @@
 </head>
 
 <body>
-    <h1>My School Day</h1>
+    <h1 id="top">My School Day</h1>
+    <ul>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#top">Back to Top</a></li>
+    </ul>
+
 
     <!-- ============================================
          U1L05 GUIDED PRACTICE — lists-practice.html
@@ -24,6 +30,12 @@
          STEP 1: A SIMPLE UNORDERED LIST
          ============================================ -->
     <h2 id="subjects">My Favorite Subjects</h2>
+    <ul>
+        <li>Math</li>
+        <li>Science</li>
+        <li>English</li>
+        <li>Music</li>
+    </ul>
     <!-- TODO 1: Add an <h2> with id="subjects"
          Text: My Favorite Subjects -->
 
@@ -35,7 +47,7 @@
 
 
     <!-- TODO 3: Add an <hr> to close the section -->
-
+<hr>
 
 
     <!-- ============================================
@@ -44,18 +56,22 @@
 
     <!-- TODO 4: Add an <h2>
          Text: My Morning Routine -->
-
+        <h2>My Morning Routine</h2>
 
     <!-- TODO 5: Add an <ol> with THREE <li> items.
          They must be in real order — this is a routine,
          so swapping them would break it.
-
          Notice: the ONLY thing different from Step 1
          is the container tag. ul became ol. -->
+         <ol>
+            <li>Wake up</li>
+            <li>Brush teeth</li>
+            <li>Eat breakfast</li>
+        </ol>
 
 
     <!-- TODO 6: Add an <hr> to close the section -->
-
+<hr>
 
 
     <!-- ============================================
@@ -65,10 +81,9 @@
          The inner <ul> goes INSIDE the <li>.
          The </li> closes AFTER the inner list ends.
          ============================================ -->
-
     <!-- TODO 7: Add an <h2> with id="schedule"
          Text: Class Schedule -->
-
+            <h2 id="schedule">Class Schedule</h2>
 
     <!-- TODO 8: Add an <ol> with TWO <li> items:
            Period 1
@@ -79,8 +94,27 @@
          Emmet shortcut for the whole thing:
            ol>li*2>ul>li*3   then Tab
          (You'll trim the extras and fill in the text.) -->
-
-
+            
+            <ul>
+                <li> Period 1
+                    <ul>
+                        <li>Computer Science</li>
+                        <li>Room 513</li>
+                    </ul>
+                </li>
+                <li> Period 2
+                    <ul>
+                        <li>Biology</li>
+                        <li>Room 712</li>
+                    </ul>
+                </li>
+                <li> Period 3
+                    <ol>
+                        <li>Art</li>
+                        <li>Room 518</li>
+                    </ol>
+                </li>
+            </ul>
     <!-- ============================================
          STEP 4: WIRE UP THE NAVIGATION MENU
          ============================================ -->
@@ -100,6 +134,8 @@
          The <h1> should say: My School Day
          And it needs  id="top"  -->
 
+
+         <a href="#top">Back to top</a>
 
 
 
